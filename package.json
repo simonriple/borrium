@@ -8,8 +8,8 @@
     "prestart": "npm run build",
     "start-nodes": "concurrently --kill-others-on-fail \"nodemon . 3001 3002\" \"nodemon . 3002 3003\" \"nodemon . 3003 3001\"",
     "start": "node .",
-    "dev": "SET NODE=first&&nodemon",
-    "dev2": "SET NODE=second&&nodemon"
+    "dev": "SET CONFIGURATION=first&&nodemon",
+    "dev2": "SET CONFIGURATION=second&&nodemon"
   },
   "author": "Simon Riple",
   "license": "ISC",
